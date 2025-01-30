@@ -85,7 +85,7 @@ This project is licensed under the MIT License.
 
 Contributors
 
-Your Name (your-email@example.com)
+Your Name : Prakkhar Prassun
 
 Acknowledgments
 
