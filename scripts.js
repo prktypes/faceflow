@@ -1,4 +1,5 @@
 const videoEl = document.querySelector('#my-video')
+//this was an update
 let stream = null // init stream var so we can use it anywhere
 const constraints = {
     audio:true,
