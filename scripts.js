@@ -1,11 +1,13 @@
 const videoEl = document.querySelector('#my-video')
-//this was an update
+
 let stream = null // init stream var so we can use it anywhere
 const constraints = {
     audio:true,
-    video:{
-        width : {min : 1024,ideal:1280, max:1920},
-    },  height : {min : 576,ideal:720, max:1080},
+    video:true,
+//     video:{
+//         width : {min : 1024,ideal:1280, max:1920},
+//     },  height : {min : 576,ideal:720, max:1080},
+// }
 }
 
 const getMicAndCamera = async()=>{
@@ -40,3 +42,4 @@ const stopMyFeed = e=>{
 document.querySelector('#share').addEventListener('click',e=>getMicAndCamera(e))
 document.querySelector('#show-video').addEventListener('click',e=>showMyFeed(e))
 document.querySelector('#stop-video').addEventListener('click',e=>stopMyFeed(e))
+document.querySelector('#change-size').addEventListener('click',e=>changeVideoSize(e))
